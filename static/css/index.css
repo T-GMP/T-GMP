@@ -290,6 +290,10 @@ body {
   font-weight: 500;
 }
 
+.subtitle {
+  margin-top: 10px;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -749,5 +753,46 @@ a:focus {
   }
 }
 
+.gif-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+/* 默认：每行两个 */
+.gif-card {
+  width: calc((100% - 20px) / 2);
+
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gif-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gif-card p {
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .gif-card {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
 
 
