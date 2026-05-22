@@ -323,8 +323,8 @@
       <video poster="" id="tree" autoplay controls muted loop width="100%" preload="metadata">
         <source src="static/videos/real_final.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <h2 class="subtitle">
+        We present T-GMP, a terrain-conditioned generative motion priors framework that enables robots to exhibit versatile and natural behaviors across diverse terrains. Trained only once, T-GMP learns whole-body coordination strategies, including natural arm swinging during walking, lowering the center of mass on stairs and slopes, and extending the arms for balance when crossing gaps or narrow beams.
       </h2>
     </div>
   </div>
@@ -340,7 +340,7 @@
         <h2 class="title is-3 " style="text-align: center">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to changing environments. We propose Terrain-conditioned Generative Motion Priors (T-GMP), a framework that captures a rich manifold of human-like motion priors from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors support smooth style interpolation, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with a concise reward formulation, where a discriminator dynamically modulates naturalness constraints conditioned on local terrain features, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate, while producing biomimetically natural and physically coordinated motions.
           </p>
         </div>
       </div>
@@ -399,11 +399,11 @@
       <div class="gif-container" style="margin-bottom: 32px;">
         <div class="gif-card">
           <img src="static\gif\upstairs_clip.gif">
-          <p>Up stairs</p>
+          <p>Stair Ascent</p>
         </div>
         <div class="gif-card">
           <img src="static\gif\downstairs_clip.gif">
-          <p>Down stairs</p>
+          <p>Stair Descent</p>
         </div>
         <div class="gif-card">
           <img src="static\gif\beam_clip.gif">
@@ -423,11 +423,11 @@
         </div>
         <div class="gif-card">
           <img src="static\gif\upslope_clip.gif">
-          <p>Up slope</p>
+          <p>Slope Ascent</p>
         </div>
         <div class="gif-card">
           <img src="static\gif\downslope_clip.gif">
-          <p>Down slope</p>
+          <p>Slope Descent</p>
         </div>
       </div>
 
@@ -468,11 +468,11 @@
       <div class="gif-container" style="margin-bottom: 32px;">
         <div class="gif-card">
           <img src="static\gif\abl_upstairs_clip.gif">
-          <p>Up stairs</p>
+          <p>Stair Ascent</p>
         </div>
         <div class="gif-card">
           <img src="static\gif\abl_downstairs_clip.gif">
-          <p>Down stairs</p>
+          <p>Stair Descent</p>
         </div>
       </div>
 
