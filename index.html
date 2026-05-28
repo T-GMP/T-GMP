@@ -324,7 +324,7 @@
         <source src="static/videos/real_final.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle">
-        We present T-GMP, a terrain-conditioned generative motion priors framework that enables robots to exhibit versatile and natural behaviors across diverse terrains. Trained only once, T-GMP learns whole-body coordination strategies, including natural arm swinging during walking, lowering the center of mass on stairs and slopes, and extending the arms for balance when crossing gaps or narrow beams.
+        We present T-GMP, a terrain-conditioned generative motion priors module that enables robots to exhibit versatile and natural behaviors across diverse terrains. Trained only once, the robot learns whole-body coordination strategies, including natural arm swinging during walking, lowering the center of mass (CoM) on stairs and slopes, and extending the arms for balance when crossing gaps or narrow beams.
       </h2>
     </div>
   </div>
@@ -340,7 +340,7 @@
         <h2 class="title is-3 " style="text-align: center">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to changing environments. We propose Terrain-conditioned Generative Motion Priors (T-GMP), a framework that captures a rich manifold of human-like motion priors from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors support smooth style interpolation, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with a concise reward formulation, where a discriminator dynamically modulates naturalness constraints conditioned on local terrain features, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate, while producing biomimetically natural and physically coordinated motions.
+            Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to varying environments. We propose Terrain-conditioned Generative Motion Priors (T-GMP), a module that captures a terrain-conditioned latent motion manifold from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors enable smooth style transitions, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with our proposed Foothold Penalty, where a discriminator dynamically modulates naturalness constraints conditioned on local terrain features, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate and motion smoothness, while preserving biomimetically natural and physically coordinated motions.
           </p>
         </div>
       </div>
@@ -461,7 +461,7 @@
       <h2 class="title is-3" style="text-align: center">Ablation Analysis</h2>
       <div class="content has-text-justified">
         <p style="text-align: center;">
-          Our Method vs. w/o Foothold Punishment
+          Our Method vs. w/o Foothold Penalty
         </p>
       </div>
       
