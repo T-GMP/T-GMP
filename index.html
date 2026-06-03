@@ -323,7 +323,7 @@
       <video poster="" id="tree" autoplay controls muted loop width="100%" preload="metadata">
         <source src="static/videos/real_all_final.mp4" type="video/mp4">
       </video>
-      <h2 class="subtitle">
+      <h2 class="subtitle" style="font-size: 1.1rem; text-align: justify;">
         <strong style="margin-right: 20px;">Real-world Deployment</strong> We present T-GMP, a terrain-conditioned generative motion priors module that enables robots to exhibit versatile and natural behaviors across diverse terrains. Trained only once, the robot learns whole-body coordination strategies, including natural arm swinging during walking, lowering the center of mass (CoM) on stairs and slopes, and extending the arms for balance when crossing gaps or narrow beams.
       </h2>
     </div>
@@ -340,7 +340,7 @@
         <h2 class="title is-3 " style="text-align: center">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to varying environments. We propose Terrain-conditioned Generative Motion Priors (T-GMP), a module that captures a terrain-conditioned latent motion manifold from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors enable smooth style transitions, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with our proposed Foothold Penalty, where a discriminator dynamically modulates naturalness constraints conditioned on local terrain features, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate and motion smoothness, while preserving biomimetically natural and physically coordinated motions.
+            Achieving both anthropomorphic naturalness and robust terrain traversal remains a fundamental challenge in humanoid locomotion. Existing Reinforcement Learning (RL) approaches typically rely on fixed motion priors, limiting their adaptability to varying environments. We propose <span style="color: rgb(0, 213, 255); font-weight: bold">Terrain-conditioned Generative Motion Priors (T-GMP)</span>, a module that captures a terrain-conditioned latent motion manifold from a few expert state-terrain demonstrations using a Conditional Variational Autoencoder (CVAE). The learned priors enable smooth style transitions, facilitating a unified policy that adapts to terrain variations. We integrate T-GMP into an adversarial learning pipeline with our proposed <span style="color: rgb(255, 196, 69); font-weight: bold">Foothold Penalty</span>, where a <span style="color: rgb(17, 173, 0); font-weight: bold">discriminator</span> dynamically modulates naturalness constraints <span style="color: rgb(17, 173, 0); font-weight: bold">conditioned on local terrain features</span>, guiding the generation of versatile and human-like motions. Experimental results demonstrate that our method outperforms existing baselines in traversal success rate and motion smoothness, while preserving biomimetically natural and physically coordinated motions.
           </p>
         </div>
       </div>
@@ -356,7 +356,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3" style="text-align: center">Overview</h2>
       <img src="static/images/overview.png" alt="First research result visualization" loading="lazy"/>
-      <h2 class="subtitle">
+      <h2 class="subtitle" style="font-size: 1.1rem; text-align: justify;">
         <strong style="margin-right: 20px;">Method Overview</strong> The overall learning pipeline consists of three parts: (I) collecting expert locomotion data using privileged expert policies and human motion capture, (II) training T-GMP using a CVAE, and (III) training a unified reinforcement learning policy with a terrain- conditioned discriminator. The terrain representation (height map) serves as a conditioning variable across all modules.
       </h2>
     </div>
@@ -371,7 +371,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3" style="text-align: center">Once All</h2>
       <div class="content has-text-justified">
-        <p style="text-align: center;">
+        <p style="text-align: center; font-weight: bold">
           Robot traverse all terrains at once in mujoco.
         </p>
       </div>
@@ -391,7 +391,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3" style="text-align: center">Style Gallery</h2>
       <div class="content has-text-justified">
-        <p style="text-align: center;">
+        <p style="text-align: center; font-weight: bold">
           Comparison of reference data in MuJoCo with real-world deployment.
         </p>
       </div>
@@ -460,7 +460,7 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3" style="text-align: center">Ablation Analysis</h2>
       <div class="content has-text-justified">
-        <p style="text-align: center;">
+        <p style="text-align: center; font-weight: bold">
           Our Method vs. w/o Foothold Penalty
         </p>
       </div>
@@ -477,7 +477,7 @@
       </div>
 
       <div class="content has-text-justified">
-        <p style="text-align: center;">
+        <p style="text-align: center; font-weight: bold">
           Our Method vs. w/o Condition
         </p>
       </div>
